@@ -15,6 +15,6 @@ export async function GET(request:Request) {
     if(!todo.id) return NextResponse.json({"message":"todo n'exist pas","status":false})
 
     return NextResponse.json({
-        todo,"status":true
+        todo,"status":true,"message":"todo  trouvé"
     })
 }
